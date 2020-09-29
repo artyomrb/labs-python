@@ -1,16 +1,8 @@
-def sum(a,b,c):
-    return a+b+c
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+c = int(input("Введите третье число: "))
+s = a+b+c
+p = a*b*c
+print("Сумма введенных чисел: {0}".format(s))
+print("Произведение введенных чисел: {0}".format(p))
 
-def mult(a,b,c):
-    return a*b*c
-
-a = int(input('Введите первое число: '))
-b = float(input('Введите второе число: '))
-c = int(input('Введите третье число: '))
-print('Сумма введенных чисел: ', sum(a, b, c))
-print('Произведение введенных чисел: ', mult(a, b, c))
-
-
-
-
-    

@@ -1,3 +1,3 @@
-print('Как тебя зовут?')
-name = input()
-print('Привет, {0} !'.format(name))
+print("Как тебя зовут?")
+a = input()
+print("Привет, {0}!".format(a))
