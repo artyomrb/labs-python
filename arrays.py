@@ -1,5 +1,7 @@
 import random
 arr=list(range(1,100))
+arr.pop(random.randint(1, 100))
+random.shuffle(arr)
 
 print("-----1 вопрос-----")
 #1.Как найти пропущенное число в заданном массиве целых чисел от 1 до 100?
