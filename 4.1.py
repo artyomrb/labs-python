@@ -1,0 +1,13 @@
+people = []
+people.append("Андрей")
+people.append("Максим")
+people.append("Даниил")
+people.append("Дамир")
+people.append("Нияз")
+people.append("Лера")
+people.append("Алекса")
+print("текущий список: ")
+print(people)
+list.sort(people)
+print("отсортированный список: ")
+print(people)
