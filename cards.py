@@ -46,7 +46,7 @@ class Hand(object):
 
 
 class Deck(Hand):
-    """колода игральных карт"""
+    """колода карт"""
 
     def populate(self):
         self.cards = []
@@ -69,6 +69,6 @@ class Deck(Hand):
 
 
 if __name__ == '__main__':
-    print('Это модуль, содержащий классы для карточных игр')
+    print('Это модуль, содержащий классы для карточных игр, а не main')
     input('Нажмите Entet, чтобы выйти')
 
