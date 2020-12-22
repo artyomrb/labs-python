@@ -37,12 +37,9 @@ mode = StringVar()
 Result = StringVar()
 
 
-# exit function
 def qExit():
     root.destroy()
 
-
-# Function to reset the window
 def Reset():
     rand.set("")
     Msg.set("")
@@ -51,7 +48,7 @@ def Reset():
     Result.set("")
 
 
-# reference
+
 lblReference = Label(f1, font=('courier', 16, 'bold'),
                      text="Имя:", bd=16, anchor="sw")
 
@@ -63,7 +60,6 @@ txtReference = Entry(f1, font=('arial', 16, 'bold'),
 
 txtReference.grid(row=0, column=1)
 
-# labels
 lblMsg = Label(f1, font=('courier', 16, 'bold'),
                text="Сообщение", bd=16, anchor="w")
 
@@ -153,7 +149,6 @@ def Ref():
     else:
         Result.set(decode(k, clear))
 
-    # Show message button
 
 
 btnTotal = Button(f1, padx=16, pady=8, bd=16, fg="black",
@@ -161,17 +156,15 @@ btnTotal = Button(f1, padx=16, pady=8, bd=16, fg="black",
                   text="Старт", bg="green",
                   command=Ref).grid(row=7, column=1)
 
-# Reset button
 btnReset = Button(f1, padx=16, pady=8, bd=16,
                   fg="black", font=('courier', 16, 'bold'),
                   width=10, text="Сброс", bg="white",
                   command=Reset).grid(row=7, column=2)
 
-# Exit button
+
 btnExit = Button(f1, padx=16, pady=8, bd=16,
                  fg="black", font=('courier', 16, 'bold'),
                  width=10, text="Выход", bg="red",
                  command=qExit).grid(row=7, column=3)
 
-# keeps window alive
 root.mainloop()
